@@ -22,7 +22,7 @@ namespace RegularExpressions2
             }
 
             pattern = "^[A-Z][a-z]*$";
-            regex = new Regex(@"^(\+?38)?0(\(\d{2}\)|\d{2})\d{3}-?\d{2}-?\d{2}$");
+            regex = new Regex(@"(\+?38)?0(\(\d{2}\)|\d{2})\d{3}-?\d{2}-?\d{2}");
 
             Console.WriteLine("\n\n");
             while (true)

@@ -65,8 +65,8 @@ namespace RegularExpressions3
             // Get all matches.
             while (match.Success)
             {
-                Console.WriteLine(match.Value);
                 match = match.NextMatch();
+                Console.WriteLine(match.Value);
             }
             Console.ReadKey();
 
@@ -96,7 +96,7 @@ namespace RegularExpressions3
 
             ////////////////////////////////////Matches
 
-            const string value1 = @"saidsaid said shed shed see spear spread super";
+            const string value1 = @"saidsaid baid shed shed see spear spread super";
 
             // Get a collection of matches.
             MatchCollection matches = Regex.Matches(value1, @"s\w+d");

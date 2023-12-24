@@ -23,13 +23,13 @@ namespace RegularExpressions
         static void Main()
         {
             // numbers
-            var regex = new Regex(@"\d");
+            var regex = new Regex(@"\d"); // ^\d{3}$
             bool flag = true;
 
             while (flag)
             {
 
-                string @string = Console.ReadKey().KeyChar.ToString();
+                string @string = Console.ReadLine();
 
                 if (@string == " ")
                 {
